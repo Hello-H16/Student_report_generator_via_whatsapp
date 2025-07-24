@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="add_faculty.php">Add Faculty</a></li>
+                <li><a href="send_message.php">Send Message</a></li>
+                <li><a href="index.php">Insert Student</a></li>
+                <li><a href="view_all.html">View All</a></li>
+                <li><a href="logout1.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Welcome, Admin</h1>
+            <div class="semester-selection">
+                <label for="semester">Select Semester:</label>
+                <select id="semester" name="semester">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                </select>
+            </div>
+
+            <div class="marks-entry">
+                <h2>Enter IA Marks</h2>
+                <form action="#">
+                    <label for="subject">Select Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="math">Mathematics</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="biology">Biology</option>
+                    </select>
+
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID" required>
+
+                    <label for="marks">Enter Marks:</label>
+                    <input type="number" id="marks" name="marks" placeholder="Enter Marks (Out of 100)" required>
+
+                    <button type="submit">Submit Marks</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
